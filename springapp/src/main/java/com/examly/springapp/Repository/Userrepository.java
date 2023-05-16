@@ -7,7 +7,9 @@ import org.springframework.data.jpa.repository.Query;
 import com.examly.springapp.Model.UserModel;
 @Repository
 public interface Userrepository extends JpaRepository<UserModel,Long>{
-    @Query("FROM UserModel WHERE email = ?1")
+    @Query("FROM UserModel WHERE email = ?1  ")
 	public UserModel findByEmail(String email);
     
+    // @Query("FROM UserModel WHERE email = ?1  and userRole=?2")
+	// public UserModel findByEmailandUserRole(String email, String userRole);
 }   

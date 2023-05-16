@@ -13,6 +13,8 @@ public interface UserService {
     UserModel saveAdmin(UserModel user);
 
     UserModel getbyEmailid(String email);
-    
+
+    // UserModel findByEmailandUserRole(String email, String userRole);
+    public Boolean checkUserbyEmail(String email) ;
     List<UserModel> getusers();
 }
