@@ -15,7 +15,7 @@ import com.examly.springapp.Service.AddonService;
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping
-public class AddonController {
+public class AddOnController {
     
 
   @Autowired
